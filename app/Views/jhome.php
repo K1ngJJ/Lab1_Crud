@@ -140,36 +140,49 @@
     </form>
   </div>
 </div>
-</div>
 
 
 
+<br>
+ <br>
 <div class="mt-5">
+  <div class="container mt-4">
+    <div class="card p-4">
+       <div class="right">
+
 
   <h3 class="d-inline-block">Product List</h3>
   <br>
-   <br>
+
    	<table class="table table-striped mt-3">
 <ul style="list-style-type:square">
 
 	<?php foreach ($lab1 as $us): ?>
+    <br>
+
 		                <li><b>Product ID:   &nbsp;&nbsp;</b><?= $us['ID'] ?></li>
 		                <li><b>Name:   &nbsp;&nbsp;</b><?= $us['ProductName'] ?></li>
 		                <li><b>Description:   &nbsp;&nbsp;</b><?= $us['ProductDescription'] ?></li>
 		                <li><b>Category: 	&nbsp;&nbsp;</b><?= $us['ProductCategory'] ?></li>
 		                <li><b>Quantity:	&nbsp;&nbsp;</b><?= $us['ProductQuantity'] ?></li>
 		                <li><b>Price: 	 &nbsp;&nbsp;</b><?= $us['ProductPrice'] ?></li>
-
+                    <br />
                       </ul>
 		                    <a href="/edit/<?= $us['ID']?>" class="btn btn-primary" style="background-color: #a48665">Edit</a>
                         &nbsp;
 		                    <a href="/delete/<?= $us['ID']?>" class="btn btn-danger" style="background-color: #a48665">Delete</a>
 		                </li>
 		               <br>
+                   <br>
+                    <br>
 		        <?php endforeach; ?>
             </table>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>
